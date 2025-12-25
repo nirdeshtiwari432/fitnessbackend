@@ -19,7 +19,8 @@ app.use(express.json());
 app.use("/api/plan", planRoutes);
 
 app.get("/", (req, res) => {
-  res.json({ status: "AI Fitness Backend Running" });
+  
+  res.json({ status: "AI Fitness Backend Running",key:process.env.OPENROUTER_API_KEY });
 });
 
 // IMPORTANT: Export app instead of listening
