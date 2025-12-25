@@ -7,8 +7,9 @@ export const generatePlan = async (req, res) => {
   } catch (err) {
     console.error(err.message);
     res.status(500).json({
+      
       success: false,
-      error: "Unable to generate plan"
+      error: err
     });
   }
 };
