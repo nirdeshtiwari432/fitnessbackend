@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://fitnessbyai-j6ee.onrender.com/",
+    origin: "https://fitnessbyai-j6ee.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   })
